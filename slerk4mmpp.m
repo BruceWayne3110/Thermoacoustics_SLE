@@ -12,7 +12,7 @@ set(groot, 'defaultLineLineWidth', 1.5);
 sigma=1;    
 amp=0.0035; 
 mu=0.4;     
-lambda_array=[105.9843,86.39,68.80,53.21,39.62]./2;
+lambda_array=[50,40,35,25,20];
 gr=1;    
 w1=1;  
 gi=0;    
@@ -33,13 +33,13 @@ figure();
 % set(gca,'linewidth',2,'FontSize',15)
 % saveas(gcf,'fixed point unf','fig');
 % saveas(gcf,'fixed point unf','png');                                                                                                                                                                                                          
-%% Bifurcation plot function
+% Bifurcation plot function
 % clc;clear;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          c;clear;
 N=51;
 sigma=1;  %4
 amp=0.0035; %0.25
 mu0=0.02;  %1
-lambda_array=[105.9843,86.39,68.80,53.21,39.62]./2;
+lambda_array=[50,40,35,25,20];
 gr=1;    %4
 w1=1;  %100
 gi=0;    %4
@@ -202,4 +202,5 @@ for i=1:N
 end    
 
 end
+
 
