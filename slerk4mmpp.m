@@ -1,7 +1,5 @@
 % Code to drive stuart landau oscillator using mmpp
-%% code to write the timeseries into a file.
-writematrix(qdotprimemodel,'hrrfcombnoise.txt');
-%% code to solve stuart landau kicked oscillator with mmpp governing the
+
 % parameter mu. 
 clc;clear;
 set(0, 'defaultFigureWindowState', 'maximized');
@@ -87,7 +85,7 @@ set(gca,'linewidth',2,'FontSize',15)
 % u3=[mu_arr2',u_all2'];
 % writematrix(u2,'bifurcation_rk4_mmpp_fwd0.05.txt');
 % writematrix(u3,'bifurcation_rk4_mmpp_back0.05.txt');
-%% Function for generating kicks according to MMPP
+
 function newtimearray=MMPP(k,time,lambda_array,h) 
 %calculation of stationary state probability.
 [V,D,W]=eig(k);
@@ -204,3 +202,4 @@ for i=1:N
 end    
 
 end
+
